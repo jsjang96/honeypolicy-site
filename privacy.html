@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · honeypolicy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>honeypolicy</a>
+  <nav><a href="index.html">소개</a><a href="terms.html">이용약관</a><a href="privacy.html" aria-current="page">개인정보처리방침</a></nav>
+</div></header>
+<main class="wrap">
+  <h1>개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 10월 17일</p>
+  <div class="lang-switch"><a href="#ko">한국어</a><a href="#en">English</a></div>
+
+  <section id="ko">
+  <p>honeypolicy(이하 "서비스")는 「개인정보 보호법」에 따라 이용자의 개인정보를 보호하고, 이와 관련한 고충을 처리하기 위해 다음과 같이 개인정보처리방침을 둡니다.</p>
+
+  <h2>1. 처리하는 개인정보와 목적</h2>
+  <p>서비스는 <strong>시청자의 개인정보를 수집하지 않습니다.</strong> 웹페이지에는 회원가입, 로그인, 쿠키 기반 추적, 광고 분석 도구가 없습니다.</p>
+  <p>서비스가 처리하는 개인정보는 운영자 본인의 틱톡 계정을 연동할 때 틱톡이 제공하는 아래 정보뿐입니다.</p>
+  <div class="table-scroll"><table>
+    <tr><th>항목</th><th>목적</th><th>보유 기간</th></tr>
+    <tr><td>틱톡 계정 식별자(open_id), 공개 표시 이름</td><td>연동된 계정 확인</td><td rowspan="3">연동 해제 시 즉시 삭제<br>(갱신 토큰은 발급 후 최대 365일)</td></tr>
+    <tr><td>접근 토큰·갱신 토큰, 허용된 권한 범위(scope)</td><td>운영자 계정으로 영상 초안 전송</td></tr>
+    <tr><td>업로드 기록(전송 시각, 처리 상태, 틱톡이 돌려준 게시 ID)</td><td>중복 전송 방지, 오류 확인</td></tr>
+  </table></div>
+  <p>틱톡 연동에서 요청하는 권한은 <code>user.info.basic</code>(계정 기본 정보)과 <code>video.upload</code>(초안 업로드)뿐이며, 팔로워·좋아요·메시지 등 다른 정보는 요청하거나 저장하지 않습니다.</p>
+
+  <h2>2. 제3자 제공과 처리 위탁</h2>
+  <p>서비스는 개인정보를 제3자에게 제공하거나 판매하지 않습니다. 영상 초안을 전송하기 위해 틱톡(TikTok) API와 통신하는 것 외에 개인정보를 외부로 보내지 않습니다.</p>
+  <p>참고: 영상 대본을 만들 때 쓰는 AI(Anthropic Claude API)에는 공개된 정책뉴스 본문만 보내며, 개인정보는 보내지 않습니다.</p>
+
+  <h2>3. 파기 절차와 방법</h2>
+  <p>보유 기간이 끝나거나 연동을 해제하면 데이터베이스에서 해당 정보를 지체 없이 삭제합니다. 운영자는 틱톡 앱의 설정에서 언제든지 서비스와의 연동 권한을 해제할 수 있습니다.</p>
+
+  <h2>4. 안전성 확보 조치</h2>
+  <ul>
+    <li>접근 토큰과 갱신 토큰은 데이터베이스에 저장할 때 암호화(AES-GCM)합니다.</li>
+    <li>서비스 관리 기능은 운영자만 사용할 수 있도록 별도의 관리 키로 보호합니다.</li>
+    <li>API 키와 비밀 값은 소스 코드에 넣지 않고 환경 변수로만 관리합니다.</li>
+  </ul>
+
+  <h2>5. 정보주체의 권리</h2>
+  <p>정보주체는 개인정보의 열람, 정정, 삭제, 처리 정지를 요구할 수 있습니다. 아래 연락처로 요청하면 지체 없이 처리합니다.</p>
+
+  <h2>6. 개인정보 보호책임자</h2>
+  <p>성명: 장진수 · 이메일: <a href="mailto:jsjang96@naver.com">jsjang96@naver.com</a></p>
+  <p>개인정보 침해에 대한 상담이 필요하면 개인정보침해신고센터(privacy.kisa.or.kr, 국번 없이 118)에 문의할 수 있습니다.</p>
+
+  <h2>7. 처리방침의 변경</h2>
+  <p>이 방침을 바꾸는 경우 시행일 7일 전부터 이 페이지에 알립니다.</p>
+  </section>
+
+  <section id="en">
+  <h2>Privacy Policy (English)</h2>
+  <p class="meta">Effective date: October 17, 2026. If the Korean and English versions differ, the Korean version prevails.</p>
+
+  <h3>1. What we process and why</h3>
+  <p>honeypolicy (the "Service") <strong>does not collect personal information from viewers.</strong> Its web pages have no sign-up, login, cookie-based tracking or advertising analytics.</p>
+  <p>The only personal information the Service processes is the following data provided by TikTok when the operator connects the operator's own TikTok account:</p>
+  <div class="table-scroll"><table>
+    <tr><th>Data</th><th>Purpose</th><th>Retention</th></tr>
+    <tr><td>TikTok account identifier (open_id) and public display name</td><td>Confirming which account is connected</td><td rowspan="3">Deleted immediately when the connection is removed<br>(refresh tokens expire at most 365 days after issuance)</td></tr>
+    <tr><td>Access token, refresh token and granted scopes</td><td>Sending video drafts to the operator's account</td></tr>
+    <tr><td>Upload records (time, processing status, publish ID returned by TikTok)</td><td>Preventing duplicate uploads and troubleshooting</td></tr>
+  </table></div>
+  <p>The integration requests only the <code>user.info.basic</code> and <code>video.upload</code> scopes. It does not request or store followers, likes, messages or any other data.</p>
+
+  <h3>2. Sharing and processors</h3>
+  <p>The Service does not sell or share personal information with third parties. Apart from communicating with the TikTok API to send video drafts, no personal information leaves the Service. The AI service used to write scripts (Anthropic Claude API) receives only public policy news text, never personal information.</p>
+
+  <h3>3. Deletion</h3>
+  <p>Data is deleted from our database without delay when its retention period ends or the connection is removed. The operator can revoke the Service's access at any time in the TikTok app settings.</p>
+
+  <h3>4. Security</h3>
+  <ul>
+    <li>Access and refresh tokens are encrypted (AES-GCM) before being stored.</li>
+    <li>Administrative functions are protected by a separate admin key available only to the operator.</li>
+    <li>API keys and secrets are never stored in source code and are provided only through environment variables.</li>
+  </ul>
+
+  <h3>5. Your rights</h3>
+  <p>You may request access to, correction, deletion or suspension of processing of your personal information by contacting us below.</p>
+
+  <h3>6. Contact</h3>
+  <p>Privacy officer: 장진수 · Email: <a href="mailto:jsjang96@naver.com">jsjang96@naver.com</a></p>
+
+  <h3>7. Changes</h3>
+  <p>Changes to this policy will be announced on this page at least 7 days before they take effect.</p>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 honeypolicy · <a href="terms.html">이용약관 / Terms</a></div></footer>
+</body>
+</html>
